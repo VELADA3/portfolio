@@ -519,13 +519,17 @@ window.addEventListener("resize", function(){
 
 //NON-PHASER LISTENER EVENTS---------------
 window.addEventListener("load", function(){
-
 	$("#loading").fadeOut()
 	setTimeout(function(){
 		$("#loading").css("display", "none");
 		//console.clear();
 	}, 400);
 });
+
+$(".photoImg, .projImg").on("load", function(){
+	$(this).fadeOut(0);
+	$(this).fadeIn();
+})
 
 $('#frame').scroll(function(){
 	($('#frame').scrollTop() > 17) ? $('#top').fadeIn(200) : $('#top').fadeOut(200);
