@@ -31,10 +31,7 @@ var scene; //images
 var inputMgr; //events
 var physicsMgr; //collisions
 
-//the ball and abberation
-var ballR; 
-var ballG; //the ball's drop timer indicator
-var ballB; 
+//the ball
 var ball; //the ball
 var throwForce = 10; //higher values send the ball further when thrown
 var ballRad = 256; //should be half the width of the ball image
@@ -108,31 +105,6 @@ function create (){
 	ball.body.useDamping = true;
 	ball.setScale(.25)
 		.setDepth(1);
-	
-	//abberation
-	ballR = physicsMgr.add.image(window.innerWidth/4, window.innerHeight/2, 'shadow')
-		.setCircle(ballRad)
-		.setScale(.25)
-		.setDepth(0)
-		.setTintFill(0xff0000)
-		.setAlpha(.25)
-		.setBlendMode(Phaser.BlendModes.SCREEN);
-	
-	ballG = physicsMgr.add.image(window.innerWidth/4, window.innerHeight/2, 'shadow')
-		.setCircle(ballRad)
-		.setScale(.25)
-		.setDepth(-1)
-		.setTintFill(0x00ff00)
-		.setAlpha(.25)
-		.setBlendMode(Phaser.BlendModes.SCREEN);
-	
-	ballB = physicsMgr.add.image(window.innerWidth/4, window.innerHeight/2, 'shadow')
-		.setCircle(ballRad)
-		.setScale(.25)
-		.setDepth(-2)
-		.setTintFill(0x0000ff)
-		.setAlpha(.25)
-		.setBlendMode(Phaser.BlendModes.SCREEN);
 	
 	//ball particles on world collide
 	var p01 = this.add.particles('flares');
@@ -257,9 +229,6 @@ function create (){
 				ease: 'Circular'
 		}, scene);
 		gameObject.body.setAngularVelocity(0);
-		ballR.body.setAngularVelocity(0);
-		ballG.body.setAngularVelocity(0);
-		ballB.body.setAngularVelocity(0);
 		gameObject.setVelocity(0,0);
 		gameObject.body.setGravityY(0);
 		
@@ -411,12 +380,7 @@ function create (){
 	}, scene);
 }
 
-function update (){	
-	//abberation
-	physicsMgr.moveTo(ballR, ball.x, ball.y, 6000, 25);
-	physicsMgr.moveTo(ballG, ball.x, ball.y, 7000, 45);
-	physicsMgr.moveTo(ballB, ball.x, ball.y, 8000, 65);
-	
+function update (){		
 	//drop timer follow & fade out
 	icenter.x = ball.x;
 	icenter.y = ball.y - 100;
@@ -463,9 +427,6 @@ function update (){
 	//spin the ball when thrown or rolling
 	if(ball.body.velocity.x != 0){
 		ball.body.setAngularVelocity(ball.body.velocity.x);
-		ballR.body.setAngularVelocity(ball.body.velocity.x);
-		ballG.body.setAngularVelocity(ball.body.velocity.x);
-		ballB.body.setAngularVelocity(ball.body.velocity.x);
 	}
 	
 	//spin the coin while moving
