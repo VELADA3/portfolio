@@ -90,6 +90,7 @@ function preload (){
 			icon: false,
 		});
 	} );
+	
 }
 
 function create (){	
@@ -472,7 +473,7 @@ function moveCursor(e) {
 }
 window.addEventListener('mousemove', moveCursor);
 window.addEventListener('DOMContentLoaded', function(){
-	checkMobile();			
+	checkMobile();	
 });
 
 //HIDE TOGGLES---------------
@@ -519,6 +520,7 @@ window.addEventListener("resize", function(){
 
 //NON-PHASER LISTENER EVENTS---------------
 window.addEventListener("load", function(){
+
 	$("#loading").fadeOut()
 	setTimeout(function(){
 		$("#loading").css("display", "none");
@@ -561,8 +563,7 @@ function checkMobile(){
 
 //ROTATING NAME AND PFP---------------
 var names = ["Hey, my name is Veronica", "GM, I'm Velada"]
-var profiles = ["./bin/images/veronica.jpg", "./bin/images/velada.png"]
-//yes, the filetypes are different as a form of artistic expression
+var profiles = ["./bin/images/veronica.jpg", "./bin/images/velada.jpg"]
 
 function rotateName() {
   var tick = $("#nTicker").data("name") || 0;
