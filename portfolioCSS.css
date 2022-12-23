@@ -436,7 +436,7 @@ p {
 /*large portrait*/
 @media only screen and (min-width:601px) and (max-width: 900px) {
   #website {
-    height: 90vh;
+    height: 87vh;
   }
   .nav {
     font-size: 18px;
@@ -470,7 +470,7 @@ p {
 /*small portrait*/
 @media only screen and (orientation: portrait) {
   #website {
-    height: 92vh;
+    height: 87vh;
   }
   .nav {
     font-size: 18px;
@@ -506,7 +506,7 @@ p {
 /*small landscape*/
 @media only screen and (max-height: 600px) {
   #website {
-    height: 90vh;
+    height: 80vh;
   }
   .nav {
     font-size: 16px;
