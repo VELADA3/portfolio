@@ -93,7 +93,8 @@ function preload (){
 	
 }
 
-function create (){	
+function create (){
+	scene.scene.pause();
 	//the ball physics
 	ball = physicsMgr.add.image(window.innerWidth/4, window.innerHeight/2, 'ball')
 		.setCircle(ballRad)
@@ -483,7 +484,6 @@ $("#hide, #hideAlt").click(function(){
 	$(".options").slideToggle();
 	if(!isHidden){
 		$(".home").slideToggle(200);
-		$("#hide").css("transform", "translate(-50%, 0) rotate(180deg)");
 		setTimeout(function(){$("#hide").css("opacity", "0%")}, 400);
 		$("#hideAlt").css("display", "block");
 		setTimeout(function(){$("#website").css("pointer-events", "none")}, 400);
@@ -502,7 +502,6 @@ $("#hide, #hideAlt").click(function(){
 		$("#hideAlt").css("opacity", "0%");
 		$("#hide").css("opacity", "100%")
 		$("#website").css("pointer-events", "initial");
-		$("#hide").css("transform", "translate(-50%, 0) rotate(0deg)");
 		$('#game').css("filter","blur(12px)");
 		$('#score').css("filter","blur(20px)");
 		$('#score').css("opacity","5%");

@@ -147,7 +147,7 @@ p {
 .container {
   display: flex;
   flex-direction: row;
-  font-size: 1.6vw;
+  font-size: 20px;
   padding: 1%;
   font-family: vista-sans, futura, sans-serif;
 }
@@ -270,7 +270,7 @@ p {
   height: 100%;
   border-radius: 0px;
   font-family: vista-sans, futura, sans-serif;
-  font-size: 2vw;
+  font-size: 24px;
   font-weight: bold;
   font-variant: small-caps;
   background-color: transparent;
@@ -301,31 +301,26 @@ p {
   background-image: url("bin/images/email.svg");
 }
 #hide, #hideAlt {
-  margin-left: 50%;
-  width: 0;
-  height: 0;
-  padding: 0;
-  transform: translate(-50%, 0) rotate(0deg);
-  background-color: transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: none;
-  border-bottom: 20px solid #ff4e75;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #ff4e75;
+  border-radius: 50%;
   cursor: inherit;
-  transition: transform .5s, border .4s;
+  border: none;
+  transition: background-color .3s;
 }
 #hide:hover, #hideAlt:hover {
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: none;
-  border-bottom: 25px solid white;
+  background-color: white;
 }
 #hideAlt {
   opacity: 0%;
-  transform: translate(-50%, 29%) rotate(180deg);
   transition: opacity 1;
   display: none;
   z-index: 2;
+  margin-top: -8px;
 }
 #score {
   position: fixed;
@@ -444,13 +439,13 @@ p {
     height: 90vh;
   }
   .nav {
-    font-size: 4vw;
+    font-size: 18px;
   }
   .container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 3vw;
+    font-size: 16px;
     padding: 1%;
     margin-left: -8px;
   }
@@ -478,13 +473,13 @@ p {
     height: 92vh;
   }
   .nav {
-    font-size: 5vw;
+    font-size: 18px;
   }
   .container {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 4vw;
+    font-size: 16px;
     padding: 1%;
     margin-left: -8px;
   }
@@ -514,13 +509,13 @@ p {
     height: 90vh;
   }
   .nav {
-    font-size: 2.7vw;
+    font-size: 16px;
   }
   .controls, .footer {
     height: 8%;
   }
   .container {
-    font-size: 2vw;
+    font-size: 14px;
     padding: 1%;
   }
   .pMain {
