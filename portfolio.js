@@ -46,11 +46,6 @@ var icenter;
 var ileft;
 var iright;
 
-//banner stuff
-var banner = document.getElementById('banner');
-var svgdoc;
-var iris;
-
 //misc global declarations
 var coin;
 var pRain;
@@ -536,20 +531,6 @@ $('#frame').scroll(function(){
 })
 
 window.addEventListener("resize", checkMobile);
-
-banner.addEventListener("load", function(){
-	svgdoc = banner.contentDocument;
-	iris = svgdoc.getElementById('IRIS')
-	$(iris).css({ 
-		'transform-origin': '1708.5276px 250px',
-	});
-	window.addEventListener("mousemove", function(){
-		$(iris).css({
-			"transform": 
-			"translateX("+((event.pageX - (window.innerWidth/2))/10)+"px) translateY("+((event.pageY - (window.innerHeight/6))/10)+"px)"
-		});
-	});	
-}, false);
 
 function checkMobile(){
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
