@@ -9,7 +9,6 @@ body {
   font-family: hwt-artz, vista-sans, futura, sans-serif;
   transition: background-color 1.5s;
   user-select: none;
-  font-display: swap;
 }
 h1 {
   font-family: hwt-artz, vista-sans, arial, futura, sans-serif;
