@@ -97,6 +97,7 @@ p {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: white transparent;
   right: -8px;
