@@ -213,8 +213,27 @@
 	<span id="cursor"></span>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.23.0/phaser.min.js"></script>
-	<script src="./portfolio.js"></script>
+	<script src="./bundle.js"></script>
+	<script>
+		var cursor = document.getElementById('cursor');
+
+		function changeCursor(){
+			cursor.style.transform = "rotate(45deg) translate(-50%, -50%)";
+			cursor.style.borderColor = "lavenderblush";
+			cursor.style.borderRadius = "5%";
+			cursor.style.width = "12px"
+			cursor.style.height = "12px"
+		}
+		function revertCursor(){
+			cursor.style.transform = "rotate(0deg) translate(-50%,-50%)";
+			cursor.style.borderColor = "white";
+			cursor.style.borderRadius = "50%"
+			cursor.style.width = "10px"
+			cursor.style.height = "10px"
+		}
+	</script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.23.0/phaser.min.js"></script>
+	<script src="./portfolio.js"></script>-->
 	<script src="./banner.js"></script>
 </body>
 </html>
