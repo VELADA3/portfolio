@@ -101,7 +101,6 @@ p {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  -webkit-scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: white transparent;
   right: -8px;
@@ -311,14 +310,20 @@ p {
   margin-right: auto;
   width: 50px;
   height: 50px;
-  background-color: #ff4e75;
+  background-color: transparent;
+  background-image: url("bin/images/cross.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   cursor: inherit;
   border: none;
-  transition: background-color .3s;
+  transform: rotate(0deg);
+  transition: transform .3s, filter .3s, background-size .4s;
 }
-#hide:hover, #hideAlt:hover {
-  background-color: white;
+#hide:hover, #hideAlt:hover{
+  filter: grayscale() brightness(100);
+  background-size: 90%;
 }
 #hideAlt {
   opacity: 0%;
@@ -326,6 +331,7 @@ p {
   display: none;
   z-index: 2;
   margin-top: -8px;
+  transform: rotate(45deg);
 }
 #score {
   position: fixed;
