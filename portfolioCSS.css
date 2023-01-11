@@ -104,6 +104,8 @@ button:hover{
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: white transparent;
+  -webkit-scrollbar-width: thin;
+  -webkit-scrollbar-color: white transparent;
   margin-left: auto;
   margin-right: auto;
 }
