@@ -21,15 +21,15 @@
 	<span id="score">0</span> <!--points for the background game-->
 	<div id="website"> <!--bounds for the content container, hides after slide closed and shows before slide open-->
 		<div id="content"> <!--the actual container jquery is sliding off the top of the screen-->
-			<a href="#about" class="home" onmouseover="changeCursor()" onmouseout="revertCursor()"> <!--logo link-->
+			<a href="#about" class="home"> <!--logo link-->
 				<object id="banner" data="./bin/images/banner.svg" type="image/svg+xml" title="banner"></object> <!--logo that moves with mouse-->
 			</a>
 			<div class="controls"> <!--the container for the nav controls-->
 			  <a href="#skills">
-					<button class="nav" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Skills">skills</button>
+					<button class="nav" title="Skills">skills</button>
 				</a>
 			  <a href="#design">
-					<button class="nav" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Design">design</button>
+					<button class="nav" title="Design">design</button>
 				</a>	
 			</div>
 			
@@ -53,12 +53,12 @@
 									I found Web3 in early 2021 and immediately knew I was home. As a method artist with a wide array of design skills, creating relaxing, minimalist simulations has become my medium. The experiences that I create are my reflections on the last decade of my life. My approach is as amusing as it is unique; I emphasize use of clean, simple design elements that display both form &amp; function without all the clutter.
 								</p>
 							    <p class="pMain">
-									There's always something hidden behind the <span id="curtain" onmouseover="changeCursor()" onmouseout="revertCursor()">curtain-</span>
+									There's always something hidden behind the <span id="curtain">curtain-</span>
 									<br>
 									<em><span onclick="document.location='mailto:veronica@fingerbang.io'"
-										  onmouseover="changeCursor(); this.style.color='#FF4E75'" 
-										  onmouseout="revertCursor(); this.style.color='#F192A7'"
-										  style="transition: color .2s; color: #F192A7;">
+										  onmouseover="this.style.color='#FF4E75'" 
+										  onmouseout="this.style.color='#F192A7'"
+										  class="vLink">
 										get in touch and let's create an experience.</span></em>
 								</p>
 							</div>
@@ -93,7 +93,7 @@
 								<div class="container wide">
 									<div> 
 											<div class="grid">
-										<button class="projButt" onclick="window.open('https://velada3.github.io/zine/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Staycation Magazine">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/zine/', '_blank');" title="Staycation Magazine">
 											<img src="./bin/images/mag.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
 										</button>
 										<div class="tombstone">
@@ -104,14 +104,14 @@
 											Coding, vector art, and magazine layout done for an unreleased project- not Burnt Firs canon.
 											<br><br>
 											<span onclick="window.open('https://velada3.github.io/zine/', '_blank');"
-										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
-										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
-											style="transition: color .2s; color: #F192A7;">Peruse the magazine.</span>
+										  	onmouseover="this.style.color='#FF4E75'" 
+										 	onmouseout="this.style.color='#F192A7'"
+											class="vLink">Peruse the magazine.</span>
 										</div>
 									</div>
 										<br><br>
 											<div class="grid">
-										<button class="projButt" onclick="window.open('https://velada3.github.io/cassette/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Cassette Tape">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/cassette/', '_blank');" title="Cassette Tape">
 											<img src="./bin/images/cassette.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
 										</button>
 										<div class="tombstone">
@@ -122,14 +122,14 @@
 											Coding and vector art done for an mp3 player that needs to be played, flipped, and rewound.
 											<br><br>
 											<span onclick="window.open('https://velada3.github.io/cassette/', '_blank');"
-										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
-										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
-											style="transition: color .2s; color: #F192A7;">Take a listen.</span>
+										  	onmouseover="this.style.color='#FF4E75'" 
+										 	onmouseout="this.style.color='#F192A7'"
+											class="vLink">Take a listen.</span>
 										</div>
 									</div>
 										<br><br>
 											<div class="grid">
-										<button class="projButt" onclick="window.open('https://velada.itch.io/002', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Ollie Game">
+										<button class="projButt" onclick="window.open('https://velada.itch.io/002', '_blank');" title="Ollie Game">
 											<img src="./bin/images/ollie.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
 										</button>
 										<div class="tombstone">
@@ -140,14 +140,14 @@
 											Coding and vector art done for a discontinued promo. It's about getting really, really high.
 											<br><br>
 											<span onclick="window.open('https://velada.itch.io/002', '_blank');"
-										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
-										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
-											style="transition: color .2s; color: #F192A7;">Get up there.</span>
+										  	onmouseover="this.style.color='#FF4E75'" 
+										 	onmouseout="this.style.color='#F192A7'"
+											class="vLink">Get up there.</span>
 										</div>
 									</div>
 										<br><br>
 											<div class="grid">
-										<button class="projButt" onclick="window.open('https://velada3.github.io/adventure/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Text Adventure">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/adventure/', '_blank');" title="Text Adventure">
 											<img src="./bin/images/adventure.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
 										</button>
 										<div class="tombstone">
@@ -158,9 +158,9 @@
 											Co-written, flow-charted, and exported using an open-source interactive story tool called Twine- not Burnt Firs canon.
 											<br><br>
 											<span onclick="window.open('https://velada3.github.io/adventure/', '_blank');"
-										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
-										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
-											style="transition: color .2s; color: #F192A7;">Find every ending.</span>
+										  	onmouseover="this.style.color='#FF4E75'" 
+										 	onmouseout="this.style.color='#F192A7'"
+											class="vLink">Find every ending.</span>
 										</div>
 									</div>
 										<br><br>
@@ -293,8 +293,6 @@
 											   height="800px" 
 											   loop 
 											   preload="metadata"
-											   onmouseover="changeCursor()" 
-											   onmouseout="revertCursor()"
 											   onclick="this.play()">
 											YOU NEED A BETTER BROWSER, HAAS
 										</video>
@@ -315,57 +313,38 @@
 					<span style="padding: 10px; margin-bottom:20px;">&#169 Velada 2022</span>	
 						
 					<a href="#about">
-						<span id="top" onmouseover="changeCursor()" onmouseout="revertCursor()"></span>
+						<span id="top"></span>
 					</a>
 				</div>
 			</div>
 			
 			<div class="footer">
 				<a href="https://twitter.com/velada_" target="_blank">
-					<button class="fnav" id="twitter"  onmouseover="changeCursor()" onmouseout="revertCursor()" title="Twitter"></button>
+					<button class="fnav" id="twitter" title="Twitter"></button>
 				</a>
 				<a href="https://discordapp.com/users/300099847753826304" target="_blank">
-					<button class="fnav" id="discord" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Discord"></button>
+					<button class="fnav" id="discord" title="Discord"></button>
 				</a>
 				<a href="mailto:veronica@fingerbang.io" target="_blank">
-					<button class="fnav" id="email" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Email"></button>
+					<button class="fnav" id="email" title="Email"></button>
 				</a>
 			</div>
 		</div>
-		<button id="hide" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Hide Site"></button>
+		<button id="hide" title="Hide Site"></button>
 	</div>
-	<button id="hideAlt" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Show Site"></button>
+	<button id="hideAlt" title="Show Site"></button>
 	
 	<div class="options">
 		<span id="hex">#0d0a0b</span>
 		<input type="checkbox" id="rainCheck">
-		<label for="rainCheck" onmouseover="changeCursor()" onmouseout="revertCursor()"></label>
+		<label for="rainCheck"></label>
 		
-		<span id="dropSlider" onmouseover="changeCursor()" onmouseout="revertCursor()"></span>
+		<span id="dropSlider"></span>
 	</div>
 	
 	<span id="game"></span>
-	<span id="cursor"></span>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-	<script>
-		var cursor = document.getElementById('cursor');
-
-		function changeCursor(){
-			cursor.style.transform = "rotate(45deg) translate(-50%, -50%)";
-			cursor.style.borderColor = "lavenderblush";
-			cursor.style.borderRadius = "5%";
-			cursor.style.width = "12px"
-			cursor.style.height = "12px"
-		}
-		function revertCursor(){
-			cursor.style.transform = "rotate(0deg) translate(-50%,-50%)";
-			cursor.style.borderColor = "white";
-			cursor.style.borderRadius = "50%"
-			cursor.style.width = "10px"
-			cursor.style.height = "10px"
-		}
-	</script>
 	<script src="./bundle.js"></script>
 	<script src="./banner.js"></script>
 </body>

@@ -6,7 +6,6 @@ html{
 
 body {
   background-color: #0d0a0b;
-  cursor: none;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -19,15 +18,16 @@ h1 {
   font-family: hwt-artz, vista-sans, arial, futura, sans-serif;
   margin-top: 15px;
 }
-a, button {
-  cursor: none;
-}
 img {
   border-radius: 10px;
 }
 p {
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+button:hover{
+  cursor: pointer;
 }
 #loading {
   position: absolute;
@@ -89,7 +89,6 @@ p {
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
-  left: -4px;
 }
 #frame {
   display: flex;
@@ -104,7 +103,8 @@ p {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: white transparent;
-  right: -8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #banner {
   max-width: 100%;
@@ -279,6 +279,13 @@ p {
   transform: scale(110%);
   filter: invert();
 }
+.vLink{
+  color: #F192A7;
+  transition: color .2s;
+}
+.vLink:hover{
+  cursor: pointer;
+}
 #twitter, #discord, #email {
   background-repeat: no-repeat;
   background-position: center;
@@ -304,7 +311,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  cursor: inherit;
+  cursor: pointer;
   border: none;
   transform: rotate(0deg);
   transition: transform .3s, filter .3s, background-size .4s;
@@ -336,20 +343,6 @@ p {
   z-index: -5;
   filter: blur(20px);
   transition: filter .5s, opacity .5s;
-}
-#cursor {
-  width: 10px;
-  height: 10px;
-  border: 5px solid white;
-  border-radius: 50%;
-  pointer-events: none;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  transform-origin: top left;
-  transition: border-radius .3s, transform .2s, width .25s, height .25s;
-  z-index: 100;
-  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, .5);
-  outline: thin solid rgba(0, 0, 0, .25);
 }
 #game {
   position: absolute;
@@ -387,7 +380,6 @@ p {
 }
 /*Rain Button*/
 .ui-checkboxradio-label, .ui-checkboxradio-label.ui-corner-all.ui-button.ui-widget.ui-checkboxradio-checked.ui-state-active {
-  cursor: none;
   accent-color: #ff4e75;
   opacity: 70%;
   box-shadow: none;
@@ -411,9 +403,6 @@ p {
 .ui-slider-handle {
   border-radius: 50%;
   outline: none;
-}
-.ui-slider-handle:hover {
-  cursor: none;
 }
 #dropSlider.ui-corner-all {
   border: none;
@@ -446,7 +435,6 @@ p {
     text-align: center;
     font-size: 16px;
     padding: 1%;
-    margin-left: -8px;
   }
   .pMain {
     padding-right: 5px;
@@ -480,7 +468,6 @@ p {
     text-align: center;
     font-size: 16px;
     padding: 1%;
-    margin-left: -8px;
   }
   .pMain {
     padding-right: 5px;
