@@ -25,8 +25,8 @@
 				<object id="banner" data="./bin/images/banner.svg" type="image/svg+xml" title="banner"></object> <!--logo that moves with mouse-->
 			</a>
 			<div class="controls"> <!--the container for the nav controls-->
-			  <a href="#coding">
-					<button class="nav" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Coding">coding</button>
+			  <a href="#skills">
+					<button class="nav" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Skills">skills</button>
 				</a>
 			  <a href="#design">
 					<button class="nav" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Design">design</button>
@@ -50,129 +50,264 @@
 									I'm a Frontend Developer &amp; Vector Artist with a B.S. in Video Game Design.
 								</p>
 					  		    <p class="pMain">
-									After graduation, I worked in cannabis for a few years. I found Web3 in 2021 and instantly knew I was home. Since then, I've been brushing-up on old skills and learning new ones. Today, I'm a method artist who makes minimalist simulations out of my life. The things that I create are a reflection of a decade of weird experiences- my approach is as amusing as it is unique.
+									I found Web3 in early 2021 and immediately knew I was home. As a method artist with a wide array of design skills, creating relaxing, minimalist simulations has become my medium. The experiences that I create are my reflections on the last decade of my life. My approach is as amusing as it is unique; I emphasize use of clean, simple design elements that display both form &amp; function without all the clutter.
 								</p>
 							    <p class="pMain">
-									I emphasize use of clean, simple design elements that display both form &amp; function without all the clutter. 
-									<span onclick="document.location='mailto:veronica@fingerbang.io'"
+									There's always something hidden behind the <span id="curtain" onmouseover="changeCursor()" onmouseout="revertCursor()">curtain-</span>
+									<br>
+									<em><span onclick="document.location='mailto:veronica@fingerbang.io'"
 										  onmouseover="changeCursor(); this.style.color='#FF4E75'" 
 										  onmouseout="revertCursor(); this.style.color='#F192A7'"
-										  style="transition: color .2s; color: #F192A7;"
-									>
-										Get in touch
-									</span>
-									- <em>let's create an experience together.</em>
+										  style="transition: color .2s; color: #F192A7;">
+										get in touch and let's create an experience.</span></em>
 								</p>
 							</div>
 						</div>
 					</a>
 						
-					<a id="coding">
-						<div class="container horizontal">
-							<div class="gCell">
-								<div class="gridDisp" id="expGrid">
-									<div class="gridAlt">
-										<h1 class="gCell">Languages</h1>
-										<div class="gridAlt gCell">
-											<span class="gCell">HTML5</span>
-											<span class="gCell">CSS3</span>
-											<span class="gCell">JavaScript</span>
-											<span class="gCell">Unity C#</span>
-										</div>
-									</div>
-									
-									<div class="gridAlt">
-										<h1 class="gCell">Libraries</h1>
-										<div class="gridAlt gCell">
-											<span class="gCell">JQuery</span>
-											<span class="gCell">Phaser 3</span>
-											<span class="gCell">Howler JS</span>
-											<span class="gCell">Turn JS</span>
-										</div>
+					<a id="skills">
+						<div class="gridAlt">
+							<h1 class="gCell">Skills</h1>
+							<div class="gridAlt gCell">
+								<div class="container wide">
+									<div id="switch1">
+										<span class="gCell">Game Theory &amp; Flow</span>
+										<span class="gCell">Logo Design</span>
+										<span class="gCell">Minimalist Simulation</span>
+										<span class="gCell">Vector Art</span>
+										<span class="gCell">Web Design</span>
 									</div>
 								</div>
-							</div>
-							
-							<div class="gCell">
-								<h1 class="gCell">EXPERIENCES</h1>
-								<div class="gridDisp" id="projGrid">
-									<div>
-										<button class="projButt" onclick="window.open('https://velada3.github.io/zine/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Staycation Magazine">
-										<img src="./bin/images/mag.png" alt="" class="projImg" width="400px" height="225px">
-										</button>
-									</div>
-									
-									<div>
-										<button class="projButt" onclick="window.open('https://velada3.github.io/cassette/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Cassette Tape">
-											<img src="./bin/images/cassette.png" alt="" class="projImg" width="400px" height="225px">
-										</button>
-									</div>
-									
-									<div>
-										<button class="projButt" onclick="window.open('https://velada.itch.io/002', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Ollie Game">
-										<img src="./bin/images/ollie.png" alt="" class="projImg" width="400px" height="225px">
-										</button>
-									</div>
-									
-									<div>
-										<button class="projButt" onclick="window.open('https://velada3.github.io/adventure/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Text Adventure">
-										<img src="./bin/images/adventure.png" alt="" class="projImg" width="400px" height="225px">
-										</button>
-									</div>
+								<div class="container wide">
+									<img src="bin/images/tri.svg" width="640px" height="512px" alt="" class="photoImg">
 								</div>
 							</div>
+							<br>
 						</div>
 					</a>
 						
 					<a id="design">
-						<div class="container horizontal">
-							<div class="gCell">
-								
-								<div class="gridOffset" id="compGrid">
-									<div>
-										<h1 class="gCell">Adobe Programs</h1>
-										<div class="gridAlt gCell">
-											<span class="gCell">Illustrator</span>
-											<span class="gCell">Dreamweaver</span>
-											<span class="gCell">After Effects</span>
-											<span class="gCell">Premiere Pro</span>
-											<span class="gCell">Audition</span>
-											<span class="gCell">InDesign</span>
-										</div>
-										<br>
-										<h1 class="gCell">Skills</h1>
-										<div class="gridAlt gCell">
-											<span class="gCell">Logo Design</span>
-											<span class="gCell">Web Design</span>
-											<span class="gCell">Minimalist Simulations</span>
-											<span class="gCell">Vector Art</span>
-											<span class="gCell">Game Theory &amp; Flow</span>
+						<div class="gridAlt">
+							<h1 class="gCell">DESIGN</h1>
+							<div class="gridAlt gCell">
+								<div class="container wide">
+									<div> 
+											<div class="grid">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/zine/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Staycation Magazine">
+											<img src="./bin/images/mag.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
+										</button>
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Staycation Magazine, </em></strong>2022
+											<br>
+											Web Experience
+											<br><br>
+											Coding, vector art, and magazine layout done for an unreleased project- not Burnt Firs canon.
+											<br><br>
+											<span onclick="window.open('https://velada3.github.io/zine/', '_blank');"
+										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
+										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
+											style="transition: color .2s; color: #F192A7;">Peruse the magazine.</span>
 										</div>
 									</div>
-									<div>
-										<h1 class="gCell">COMPOSITIONS</h1>
-										<div class="gridPhoto" id="photoGrid"> 
-											<div class="gridAlt">
-												<img src="./bin/images/comps/01.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/02.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/03.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/04.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-											</div>
-											<div class="gridAlt">
-										 		<img src="./bin/images/comps/05.jpg" class="photoImg" alt="" loading="lazy"width="800px" height="800px">
-										 		<img src="./bin/images/comps/06.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-										 		<img src="./bin/images/comps/07.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-										 		<img src="./bin/images/comps/08.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-											</div>  
-											<div class="gridAlt">
-												<img src="./bin/images/comps/09.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/10.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/11.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-												<img src="./bin/images/comps/12.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
-											</div>
+										<br><br>
+											<div class="grid">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/cassette/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Cassette Tape">
+											<img src="./bin/images/cassette.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
+										</button>
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>The Cassette Tape, </em></strong>2022
+											<br>
+											Web Experience
+											<br><br>
+											Coding and vector art done for an mp3 player that needs to be played, flipped, and rewound.
+											<br><br>
+											<span onclick="window.open('https://velada3.github.io/cassette/', '_blank');"
+										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
+										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
+											style="transition: color .2s; color: #F192A7;">Take a listen.</span>
 										</div>
 									</div>
-								</div>	
+										<br><br>
+											<div class="grid">
+										<button class="projButt" onclick="window.open('https://velada.itch.io/002', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Ollie Game">
+											<img src="./bin/images/ollie.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
+										</button>
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>OLLIE!, </em></strong>2022
+											<br>
+											Unity Game
+											<br><br>
+											Coding and vector art done for a discontinued promo. It's about getting really, really high.
+											<br><br>
+											<span onclick="window.open('https://velada.itch.io/002', '_blank');"
+										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
+										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
+											style="transition: color .2s; color: #F192A7;">Get up there.</span>
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<button class="projButt" onclick="window.open('https://velada3.github.io/adventure/', '_blank');" onmouseover="changeCursor()" onmouseout="revertCursor()" title="Text Adventure">
+											<img src="./bin/images/adventure.png" alt="" class="photoImg" loading="lazy" width="400px" height="225px">
+										</button>
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>An Evening in Burnt Firs, </em></strong>2022
+											<br>
+											HTML5 Game
+											<br><br>
+											Co-written, flow-charted, and exported using an open-source interactive story tool called Twine- not Burnt Firs canon.
+											<br><br>
+											<span onclick="window.open('https://velada3.github.io/adventure/', '_blank');"
+										  	onmouseover="changeCursor(); this.style.color='#FF4E75'" 
+										 	onmouseout="revertCursor(); this.style.color='#F192A7'"
+											style="transition: color .2s; color: #F192A7;">Find every ending.</span>
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/01.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Paratus, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											Beware of false prophets, which come to you in televangelists' clothing.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/02.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Liquefacio, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											A creative block, resolved.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/03.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Anima, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											Their four rings were full of eyes  all around.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/11.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Avaritia, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											He took the gold they gave him and forged a statue shaped like a calf. Then he said, “These are your gods, Wall Street, who brought you out of recession.”
+										</div>
+									</div>
+										<br><br>
+								 			<div class="grid">
+										<img src="./bin/images/comps/09.jpg" class="photoImg" alt="" loading="lazy"width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>A Gorgeous Day, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											"Man, I ain’t believin’ that shit about Bonham’s one-hour drum solo … I mean, one hour on drums … you couldn’t handle that shit on strong acid, man."
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+							 			<img src="./bin/images/comps/06.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Louis W, </em></strong>2021
+											<br>
+											Adobe Illustrator
+											<br><br>
+											A 1:1 for an unreleased NFT project called Finger Bang Skate Gang.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+							 			<img src="./bin/images/comps/07.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Untitled Degenerate, </em></strong>2022
+											<br>
+											Adobe Illustrator
+											<br><br>
+											Character art for an unreleased profile picture project without a name.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+							 			<img src="./bin/images/comps/05.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Welcome to Burnt Firs, </em></strong>2022
+											<br>
+											Adobe Illustrator
+											<br><br>
+											A logo design done for our upcoming Web3 project- created based on a sketch done by my wife.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/04.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>EADY LABS, </em></strong>2022
+											<br>
+											Adobe Illustrator
+											<br><br>
+											A logo design done for our budding punk-art collective.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/12.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Velada.eth, </em></strong>2022
+											<br>
+											Adobe Illustrator
+											<br><br>
+											A logo design done for my personal branding.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<img src="./bin/images/comps/08.jpg" class="photoImg" alt="" loading="lazy" width="800px" height="800px">
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Creatio, </em></strong>2022
+											<br>
+											Adobe Illustrator
+											<br><br>
+											The workmanship of the wheels gleamed like beryl- a wheel within a wheel.
+										</div>
+									</div>
+										<br><br>
+											<div class="grid">
+										<video src="./bin/images/comps/10.mp4" 
+											   class="photoImg" 
+											   style="border-radius: 10px;" 
+											   width="800px" 
+											   height="800px" 
+											   loop 
+											   preload="metadata"
+											   onmouseover="changeCursor()" 
+											   onmouseout="revertCursor()"
+											   onclick="this.play()">
+											YOU NEED A BETTER BROWSER, HAAS
+										</video>
+										<div class="tombstone">
+											<strong style="font-size: 130%"><em>Loading Screen, </em></strong>2021
+											<br>
+											Adobe Illustrator, After Effects, Premeire
+											<br><br>
+											A loading screen for a livestream, tap to play.
+										</div>
+									</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</a>
