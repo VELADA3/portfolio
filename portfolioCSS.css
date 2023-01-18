@@ -194,8 +194,10 @@ button:hover{
   margin-left: 30px;
 }
 #curtain{
-	font-weight: 600;
-	cursor: pointer;
+  font-weight: 600;
+}
+#curtain:hover{
+  cursor: pointer;
 }
 .grid, .gridAlt, .gridOffset {
   display: grid;
