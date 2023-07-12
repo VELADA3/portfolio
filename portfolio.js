@@ -504,8 +504,8 @@ function checkMobile(){
 }
 
 //ROTATING NAME AND PFP---------------
-var names = ["Hey, my name is Veronica", "GM, I'm Velada"]
-var profiles = ["./bin/images/veronica.jpg", "./bin/images/velada.jpg"]
+var names = ["GM, my name is Velada", "I'm the patron saint of blunts"]
+var profiles = ["./bin/images/velada2.jpg", "./bin/images/velada.jpg"]
 
 function rotateName() {
   var tick = $("#nTicker").data("name") || 0;
